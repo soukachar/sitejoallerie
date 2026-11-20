@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#4b2e24">
+  <meta property="og:title" content="Maison Joaillerie | Des bijoux qui racontent votre histoire">
+  <meta property="og:description" content="Explorez nos collections de bagues, colliers et bracelets.">
+  <meta name="description" content="Découvrez Maison Joaillerie : bagues, colliers et bracelets dans un univers raffiné et intemporel.">
+  <title>Maison Joaillerie | L'élégance dans chaque détail</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+  <header class="site-header" id="accueil">
+    <div class="nav-shell">
+      <a class="brand" href="#accueil" aria-label="Maison Joaillerie, retour à l'accueil"><span class="brand-icon" aria-hidden="true">✧</span> Maison <span>Joaillerie</span></a>
+      <button class="nav-toggle" type="button" aria-label="Ouvrir le menu de navigation" aria-expanded="false" aria-controls="nav-panel"><span></span><span></span><span></span></button>
+      <nav class="nav-panel" id="nav-panel" aria-label="Navigation principale">
+        <a href="#accueil" class="nav-link">Accueil</a>
+        <div class="dropdown">
+          <button type="button" class="nav-link dropdown-toggle" aria-expanded="false" aria-controls="collection-dropdown">Collections <span aria-hidden="true">⌄</span></button>
+          <div id="collection-dropdown" class="dropdown-list" hidden>
+            <a href="#bagues">Bagues</a>
+            <a href="#colliers">Colliers</a>
+            <a href="#bracelets">Bracelets</a>
+          </div>
+        </div>
+        <a href="#notre-maison" class="nav-link">Notre maison</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <form class="nav-search" role="search" id="search-form">
+          <label class="sr-only" for="search">Rechercher une collection</label>
+          <input id="search" type="search" placeholder="Rechercher une collection…" autocomplete="off">
+          <button type="submit" aria-label="Lancer la recherche">Rechercher</button>
+        </form>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="eyebrow hero-eyebrow">MAISON JOAILLERIE · L'ÉLÉGANCE INTEMPORELLE</p>
+        <h1 id="hero-title">Des bijoux qui racontent <em>votre histoire.</em></h1>
+        <p class="hero-desc">Des créations délicates, pensées pour illuminer les instants précieux.</p>
+        <div class="hero-actions"><a href="#collections" class="button button-gold">Explorer nos collections <span aria-hidden="true">↗</span></a><a href="#contact" class="hero-text-link">Nous contacter <span aria-hidden="true">→</span></a></div>
+      </div>
+      <a class="scroll-prompt" href="#collections">Découvrir <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <div class="signature-strip" aria-label="Notre univers"><span>ÉLÉGANCE</span><span aria-hidden="true">✧</span><span>RAFFINEMENT</span><span aria-hidden="true">✧</span><span>ÉMOTION</span></div>
+
+    <section class="collections section-pad" id="collections" aria-labelledby="collections-title">
+      <div class="section-heading"><p class="eyebrow">L'UNIVERS DE LA MAISON</p><h2 id="collections-title">Nos collections</h2><p>Une sélection pour chaque occasion et chaque envie.</p></div>
+      <div class="collection-tools" role="group" aria-label="Filtrer les collections">
+        <button class="filter-chip active" type="button" data-filter="all" aria-pressed="true">Toutes les créations</button>
+        <button class="filter-chip" type="button" data-filter="bagues" aria-pressed="false">Bagues</button>
+        <button class="filter-chip" type="button" data-filter="colliers" aria-pressed="false">Colliers</button>
+        <button class="filter-chip" type="button" data-filter="bracelets" aria-pressed="false">Bracelets</button>
+      </div>
+      <p id="search-feedback" class="search-feedback" role="status" aria-live="polite"></p>
+      <div class="collection-grid" id="collection-grid">
+        <article class="product-card" id="bagues" data-category="bagues" data-search="bagues bague anneaux diamant élégantes">
+          <button class="card-image open-detail" type="button" data-product="bagues" aria-label="Voir la collection bagues"><img src="image/bague.png" alt="Bague dorée avec pierre brillante sur tissu beige" loading="lazy" width="778" height="783"><span class="card-image-arrow" aria-hidden="true">↗</span></button>
+          <div class="card-content"><p class="card-kicker">COLLECTION 01</p><h3>Bagues</h3><p>Un éclat subtil pour les moments inoubliables.</p><button class="card-link open-detail" type="button" data-product="bagues">Voir la collection <span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="product-card" id="colliers" data-category="colliers" data-search="colliers collier pendentif émeraude raffiné">
+          <button class="card-image open-detail" type="button" data-product="colliers" aria-label="Voir la collection colliers"><img src="image/collier.png" alt="Collier doré à pendentif vert entouré de pierres lumineuses" loading="lazy" width="790" height="792"><span class="card-image-arrow" aria-hidden="true">↗</span></button>
+          <div class="card-content"><p class="card-kicker">COLLECTION 02</p><h3>Colliers</h3><p>Des lignes délicates qui subliment chaque silhouette.</p><button class="card-link open-detail" type="button" data-product="colliers">Voir la collection <span aria-hidden="true">→</span></button></div>
+        </article>
+        <article class="product-card" id="bracelets" data-category="bracelets" data-search="bracelets bracelet or doré précieux">
+          <button class="card-image open-detail" type="button" data-product="bracelets" aria-label="Voir la collection bracelets"><img src="image/bracelet.png" alt="Bracelet doré serti de pierres sur fond crème" loading="lazy" width="775" height="785"><span class="card-image-arrow" aria-hidden="true">↗</span></button>
+          <div class="card-content"><p class="card-kicker">COLLECTION 03</p><h3>Bracelets</h3><p>La touche de lumière qui accompagne vos gestes.</p><button class="card-link open-detail" type="button" data-product="bracelets">Voir la collection <span aria-hidden="true">→</span></button></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="editorial" aria-labelledby="editorial-title">
+      <div class="editorial-inner">
+        <p class="eyebrow">L'ART DU DÉTAIL</p>
+        <h2 id="editorial-title">La lumière d'un bijou.<br><em>Le souvenir d'un instant.</em></h2>
+        <p>Une bague pour un oui, un collier pour célébrer, un bracelet pour offrir. Découvrez la pièce qui vous ressemble.</p>
+        <a class="button button-outline" href="#contact">Parlons de votre projet <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="editorial-photo"><img src="image/bague.png" alt="Détail d'une bague dorée sertie d'une pierre lumineuse" loading="lazy"></div>
+    </section>
+
+    <section class="story" id="notre-maison" aria-labelledby="story-title"><div class="story-visual"><img src="image/joallerie.png" alt="Pendentif aux nuances vertes dans un écrin lumineux" loading="lazy" width="772" height="781"></div><div class="story-copy"><p class="eyebrow">NOTRE UNIVERS</p><h2 id="story-title">La beauté est dans <em>les détails.</em></h2><p>Chez Maison Joaillerie, chaque bijou est une invitation à célébrer les petites et grandes occasions. Explorez une sélection où la douceur des matières rencontre l'éclat des pierres.</p><a class="text-cta" href="#contact">Échangeons sur votre envie <span aria-hidden="true">↗</span></a></div></section>
+
+    <section class="faq section-pad" id="questions" aria-labelledby="faq-title">
+      <div class="section-heading"><p class="eyebrow">À VOTRE ÉCOUTE</p><h2 id="faq-title">Questions fréquentes</h2><p>Quelques réponses avant de nous écrire.</p></div>
+      <div class="faq-list">
+        <details><summary>Comment demander des informations sur une collection ? <span aria-hidden="true">+</span></summary><p>Ouvrez l'aperçu d'une collection, puis utilisez « Demander des informations ». Le formulaire de contact se remplira avec le sujet correspondant.</p></details>
+        <details><summary>Puis-je vous contacter depuis mon téléphone ? <span aria-hidden="true">+</span></summary><p>Oui. Le site et le formulaire sont adaptés aux petits écrans.</p></details>
+        <details><summary>Comment envoyer un message ? <span aria-hidden="true">+</span></summary><p>Renseignez votre nom, votre adresse email, un sujet et votre demande dans le formulaire ci-dessous. L'envoi est assuré par FormSubmit.</p></details>
+      </div>
+    </section>
+
+    <section class="contact-section section-pad" id="contact" aria-labelledby="contact-title"><div class="contact-layout"><div class="contact-copy"><p class="eyebrow">RESTONS EN CONTACT</p><h2 id="contact-title">Une question, <em>une envie ?</em></h2><p>Vous souhaitez en savoir plus sur une collection ? Envoyez-nous un message et nous vous répondrons par email.</p><div class="contact-detail"><span class="contact-star" aria-hidden="true">✧</span><span>Une attention particulière à chaque message.</span></div></div><div class="contact-card"><h3>Écrivez-nous</h3><p>Nous serons ravis de vous lire.</p>
+      <form action="https://formsubmit.co/charkani.soukaina@gmail.com" method="POST" id="contact-form">
+        <input type="hidden" name="_subject" value="Nouveau message - Maison Joaillerie">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_captcha" value="true">
+        <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="field"><label for="nom">Nom complet</label><input id="nom" name="nom" type="text" placeholder="Votre nom" autocomplete="name" required maxlength="120"></div>
+        <div class="field"><label for="email">Adresse email</label><input id="email" name="email" type="email" placeholder="vous@exemple.com" autocomplete="email" required maxlength="254"></div>
+        <div class="field"><label for="sujet">Sujet</label><input id="sujet" name="sujet" type="text" placeholder="Votre demande" required maxlength="160"></div>
+        <div class="field"><label for="message">Votre message</label><textarea id="message" name="message" rows="5" placeholder="Parlez-nous de votre demande…" required maxlength="3000"></textarea></div>
+        <button class="button button-gold submit-button" type="submit">Envoyer le message <span aria-hidden="true">↗</span></button>
+        <p class="privacy-note">En envoyant ce formulaire, vous acceptez que vos informations soient utilisées pour répondre à votre demande via FormSubmit.</p>
+      </form>
+    </div></div></section>
+  </main>
+  <dialog class="product-modal" id="product-modal" aria-labelledby="modal-title">
+    <button class="modal-close" type="button" aria-label="Fermer l'aperçu">×</button>
+    <div class="modal-grid"><div class="modal-art"><img id="modal-image" src="image/bague.png" alt=""></div>
+      <div class="modal-copy"><p class="eyebrow" id="modal-kicker">COLLECTION</p><h2 id="modal-title">Bagues</h2>
+        <p id="modal-description"></p>
+        <p class="modal-note">Une pièce attire votre attention ? Écrivez-nous pour en savoir plus.</p>
+        <a href="#contact" class="button button-gold" id="modal-contact">Demander des informations <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+  </dialog>
+  <a href="#accueil" class="back-to-top" aria-label="Retour en haut de page">↑</a>
+  <footer class="footer"><div class="footer-inner"><a class="brand" href="#accueil"><span class="brand-icon" aria-hidden="true">✧</span> Maison <span>Joaillerie</span></a><p>La beauté des instants précieux.</p><nav aria-label="Liens du pied de page"><a href="#accueil">Accueil</a><a href="#collections">Collections</a><a href="#contact">Contact</a><a href="#questions">Questions</a></nav><small>© <span id="year">2026</span> Maison Joaillerie. Tous droits réservés.</small></div></footer>
+</body>
+</html>

@@ -1,0 +1,15 @@
+MAISON JOAILLERIE — ÉDITION SIGNATURE
+
+Ouvrir index.html avec Live Server depuis VS Code.
+
+Contenu : page responsive, navigation mobile, recherche, filtres par collection, aperçus détaillés en fenêtre, section éditoriale, FAQ, bouton retour en haut, et formulaire FormSubmit.
+
+IMPORTANT : l’adresse Gmail de destination déjà présente dans la version précédente a été conservée dans le formulaire. Vérifiez qu’elle est bien celle souhaitée avant de publier.
+
+Le bouton « Voir la collection » affiche un aperçu (il n’y a pas encore de fiches produits avec prix ni de paiement).
+Le formulaire requiert une connexion internet, et fonctionne après activation de FormSubmit. Effectuez un test réel.
+Les visuels restent les images de votre projet d’origine.
+
+Fichiers : index.html, css/style.css, js/main.js, image/*.png
+
+VERSION MARRON : chocolat #4b2e24, marron profond #291913, caramel #c99857, fond crème #faf4ec. Les fonctionnalités et la configuration FormSubmit sont conservées.
